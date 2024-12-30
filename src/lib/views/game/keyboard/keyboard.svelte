@@ -4,7 +4,7 @@
 	let keydown=$state({value:''})
 
 </script>
-<section class="w-full flex flex-col items-center">
+<section class="w-full flex flex-col justify-center items-center">
 {#each {length:3} as _,index}
 <KeyRow keydown={keydown.value} {index}/>
 {/each}

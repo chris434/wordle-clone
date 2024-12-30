@@ -19,7 +19,7 @@ const isEnter=key==='Enter'?true:false
 </script>
 
 {#key game.letterMap[key]}
-<Button  onClick={clickHandler} overrideClass="{getStatus(isAction?'none':game.letterMap[key],'bg-slate-200')} h-[3rem] {keydown===key?'scale-125':!keydown?`hover:scale-125`:''} {keydown===key&&status==='none'?'bg-slate-300':!keydown&&status==='none'?'hover:bg-slate-300':''} p-3 text-md flex items-center justify-center self-end rounded-md  {type==='action'?'w-[4rem] sm:w-[7rem]':'w-[1rem] sm:w-[3rem]'} ">
+<Button  onClick={clickHandler} overrideClass="{getStatus(isAction?'none':game.letterMap[key],'bg-slate-200')} h-[3rem] {keydown===key?'scale-125':!keydown?`hover:scale-125`:''} {keydown===key&&status==='none'?'bg-slate-300':!keydown&&status==='none'?'hover:bg-slate-300':''} p-3 text-md flex items-center justify-center self-end rounded-md  {type==='action'?'w-[2.5rem] sm:w-[7rem]':'w-[1.7rem] sm:w-[3rem]'} ">
     {key}
 </Button>
 {/key}

@@ -4,7 +4,7 @@
 	import type { Props } from "./types";
     const {index,keydown}:Props=$props()
 </script>
-<div class="flex space-x-2 space-y-2 items-center justify-center">
+<div class="flex space-x-2 space-y-2 items-center self-center w-full justify-center">
 {#each KEYBOARD_KEYS[index] as row }
     <Key {keydown} {...row}/>
 {/each}
